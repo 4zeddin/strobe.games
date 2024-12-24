@@ -1,0 +1,644 @@
+:root {
+  --dark-green-color: #02260c;
+  --white-color: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  scroll: smouth;
+  background-color: var(--dark-green-color);
+  color: #ffffff;
+}
+
+@font-face {
+  font-family: "Mongoose";
+  src: url("./fonts/mongoose-regular.otf");
+}
+
+p,
+h3 {
+  font-family: "Radio Canada Big";
+}
+
+h1,
+h2,
+a {
+  font-family: "Mongoose";
+}
+
+.hero-container {
+  background-image: url("./images/image.png");
+  background-size: 100% 100%;
+  height: 100%;
+  position: relative;
+  overflow: visible;
+}
+
+.header {
+  text-align: center;
+  padding-top: 15px;
+}
+
+.header .logo {
+  width: 11vw;
+  min-width: 136.95px;
+}
+
+.header nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+}
+
+.header nav ul li a {
+  text-decoration: none;
+  position: relative;
+  color: #ffffff;
+  font-family: Radio Canada Big;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20.8px;
+  text-align: left;
+}
+
+.header nav ul li a::after {
+  padding-bottom: 3px;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--white-color);
+  transition: width 0.3s ease-in-out;
+}
+
+.header nav ul li a:hover::after {
+  width: 100%;
+}
+
+.hero-text {
+  text-align: center;
+  font-size: 61px;
+  font-weight: 400;
+  line-height: 47px;
+  padding-top: 186px;
+  font-style: italic;
+  text-transform: none;
+}
+
+.hero-text span:nth-child(2) {
+  font-size: 40px;
+  line-height: 42.12px;
+}
+
+.hero-text span {
+  display: block;
+  padding: 0;
+}
+
+.hero-btn {
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 57px;
+}
+
+.hero-btn a {
+  text-decoration: none;
+  color: rgb(0, 47, 13);
+  background: rgb(255, 255, 255);
+  font-size: 30px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 31.59px;
+  letter-spacing: 2px;
+  padding: 16px 30px;
+  transition: box-shadow 0.3s ease-in-out;
+  border: none;
+}
+
+.hero-btn a:hover {
+  color: #036630;
+  background: var(--global-palette9, #ffffff);
+  box-shadow: 0px 20px 16px 8px rgba(0, 0, 0, 0.25);
+}
+
+.scroll-arrow {
+  bottom: -2%;
+  width: 27px;
+  position: absolute;
+  left: 50%;
+}
+
+.strobe-desc {
+  max-width: 924px;
+  text-align: center;
+  margin: 60px auto;
+}
+
+.strobe-desc h1 {
+  background: linear-gradient(90deg, #f6d180 4.75%, #ec8b6b 103.14%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-family: Mongoose;
+  font-size: 80px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 84.24px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.strobe-desc p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.strobe-desc span {
+  color: #f6d180;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.outline-logo {
+  margin-block: 12%;
+}
+
+.outline-logo img {
+  width: 100%;
+}
+
+/* .txt-games {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 200px;
+  padding-inline: 15%;
+}
+
+.games {
+  max-width: 500px;
+  display: grid;
+  gap: 80px;
+}
+
+.games .game img {
+  width: 500px;
+  height: 305px;
+}
+
+.games .game h2 {
+  background: linear-gradient(180deg, #89ffb6 0%, #1e6238 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-size: 55px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 57.91px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.games .game p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  padding-bottom: 40px;
+}
+
+.games .game a {
+  text-decoration: none;
+  width: Hug (103px) px;
+  height: Hug (51px) px;
+  padding: 16px 39px;
+  border-radius: 47px;
+  background: #ffffff;
+  color: #002f0d;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 29.48px;
+  letter-spacing: 1px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.txt h2 {
+  position: sticky;
+  top: 20px;
+  font-size: 45px;
+  font-style: italic;
+  text-align: end;
+  line-height: 55px;
+  margin-bottom: 25px;
+}
+
+.txt span {
+  padding-top: 20px;
+  font-size: 60px;
+  display: block;
+  text-align: end;
+} */
+
+.highlights {
+  max-width: 1556px;
+  margin: 10% auto;
+}
+
+.highlights h2 {
+  background-image: linear-gradient(
+    135deg,
+    rgb(246, 209, 128) 0%,
+    rgb(236, 139, 107) 100%
+  );
+  font-family: Mongoose;
+  font-size: 70px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 73.71px;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.highlight {
+  text-align: center;
+  gap: 5px;
+}
+
+.highlight img {
+  max-width: 100%;
+  height: auto;
+  padding-bottom: 20px;
+}
+
+.highlight h3 {
+  padding-bottom: 20px;
+  font-size: 30px;
+  line-height: 39px;
+  font-weight: 700;
+  text-transform: none;
+}
+
+.highlight p {
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 400;
+  text-transform: none;
+}
+
+.footer-foot {
+  padding-block: 50px;
+  background-color: #002f0d;
+}
+
+.footer-foot img {
+  margin-bottom: 20px;
+}
+
+.footer-foot a {
+  text-decoration: none;
+  color: var(--white-color);
+  line-height: 18.2px;
+  font-size: 14px;
+  font-weight: 400;
+  padding-inline: 10px;
+  font-family: "Radio Canada Big";
+}
+
+.footer-foot p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.footer-foot div p:nth-of-type(1) {
+  line-height: 26px;
+}
+
+.footer-foot div p:nth-of-type(2) {
+  line-height: 18.2px;
+  text-transform: uppercase;
+}
+
+.footer-menu p {
+  weight: 400;
+  size: 14px;
+  line-height: 18.2px;
+}
+
+.footer-menu a {
+  color: var(--white-color);
+  font-family: "Radio Canada Big";
+}
+
+.txt-games {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 350px;
+  padding-inline: 15%;
+  margin-block: 5%;
+}
+
+.games {
+  max-width: 500px;
+  height: auto;
+  display: grid;
+  gap: 85px;
+}
+
+.game img {
+  max-width: 100%;
+  height: auto;
+}
+
+.game h2 {
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text !important;
+  font-size: 3rem;
+  font-style: italic;
+  font-weight: 400;
+  text-align: left;
+  margin-block: 15px;
+}
+
+.game p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+.game a {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 16px 39px;
+  border-radius: 47px;
+  background: #ffffff;
+  color: #002f0d;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 500;
+  text-align: center;
+}
+
+.game a:hover {
+  background: #002f0d;
+  color: var(--white-color);
+  border: solid 1px #ffffff;
+}
+
+.game:nth-child(1) h2 {
+  background: linear-gradient(180deg, #89ffb6 0%, #1e6238 100%);
+}
+
+.game:nth-child(2) h2 {
+  background: linear-gradient(180deg, #83f8fb 0%, #0c8f93 100%);
+}
+
+.game:nth-child(3) h2 {
+  background: linear-gradient(180deg, #ff89ac 0%, #c6305c 100%);
+}
+
+.txt h2 {
+  text-align: right;
+  line-height: 72px;
+  font-size: 4.5rem;
+  padding-right: 5px;
+  font-weight: 400;
+  text-transform: none;
+  position: sticky;
+  top: 20px;
+  font-style: italic;
+  margin-bottom: 25px;
+  background-image: url(./images/bg-img.webp);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-position-y: 0%;
+}
+
+.txt span {
+  padding-top: 10px;
+  font-size: 4.2rem;
+  display: block;
+  text-align: end;
+}
+
+@media (max-width: 1600px) {
+  .scroll-arrow {
+    bottom: -3%;
+  }
+
+  .txt-games {
+    gap: 200px;
+  }
+
+  .txt span {
+    padding-top: 7px;
+    font-size: 3rem;
+    display: block;
+    text-align: end;
+  }
+
+  .txt h2 {
+    font-size: 3rem;
+    line-height: 50px;
+  }
+
+  .games {
+    max-width: 400px;
+  }
+
+  .games .game img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 1228px) {
+  .txt h2 {
+    font-size: 1.9rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .txt-games {
+    grid-template-columns: 100%;
+    gap: 40px;
+  }
+
+  .games {
+    max-width: 100%;
+  }
+
+  .txt h2 {
+    background-image: linear-gradient(
+      337deg,
+      rgb(57, 137, 89) 0%,
+      rgb(47, 127, 94) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  .txt span {
+    display: none !important;
+  }
+}
+
+@media (max-width: 950px) {
+  .hero-container {
+    background-image: url("./images/image-mobile.png");
+    background-size: 100% 100%;
+    height: 100%;
+    position: relative;
+    overflow: visible;
+  }
+
+  .games .game img {
+    width: 100%;
+  }
+
+  .games .game h2 {
+    font-size: 2rem;
+  }
+
+  .games .game p {
+    font-size: 1rem;
+  }
+
+  .games .game a {
+    font-size: 1.2rem;
+    padding: 12px 30px;
+  }
+
+  .txt h2 {
+    background-image: linear-gradient(
+      337deg,
+      rgb(57, 137, 89) 0%,
+      rgb(47, 127, 94) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  .txt span {
+    display: none !important;
+  }
+
+  .strobe-desc {
+    margin-inline: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .scroll-arrow {
+    bottom: -2%;
+  }
+
+  .header {
+    padding-top: 28px;
+  }
+
+  .strobe-desc h1 {
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 67.39px;
+  }
+
+  .outline-logo {
+    margin-block: 20%;
+  }
+
+  .txt-games {
+    gap: 5px;
+  }
+
+  .footer-foot p {
+    display: flex;
+  }
+
+  .hero-text {
+    font-size: 47px;
+    line-height: 40px;
+    width: 400;
+  }
+
+  .hero-text:nth-child(2) {
+    font-size: 35px;
+    line-height: 23px;
+  }
+
+  .highlights h2 {
+    display: none;
+  }
+
+  .header nav ul {
+    gap: 15px;
+    max-width: 270.81px;
+    margin: 0 auto;
+  }
+
+  .header nav ul li a {
+    font-family: Radio Canada Big;
+    font-size: 11.53px;
+    font-weight: 700;
+    line-height: 14.99px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  .txt h2 {
+    font-size: 33px;
+    line-height: 37px;
+  }
+
+  .games .game h2 {
+    font-size: 1.6rem;
+  }
+
+  .games .game p {
+    font-size: 0.9rem;
+  }
+
+  .games .game a {
+    font-size: 1rem;
+    padding: 10px 25px;
+  }
+
+  .txt span {
+    font-size: 2rem;
+  }
+}
