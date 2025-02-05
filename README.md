@@ -1,7 +1,4 @@
 # demo
 
-<video width="600" controls>
-  <source src="https://raw.githubusercontent.com/4zeddin/strobe.games/blob/main/strobe.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+[![Watch the video](https://img.youtube.com/vi/Kmx5w2rWiss/maxresdefault.jpg)](https://www.youtube.com/watch?v=Kmx5w2rWiss)
 
